@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Make your resume here 
+        and take it in pdf format</h1>
+    <div class="form-container">
+        <h1>Resume Generator</h1>
+        <form id="resumeForm">
+            <div class="form-group">
+                <h1>Full Name:</h1>
+                <input type="text" id="name" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="education">Education:</label>
+                <input type="text" id="education" placeholder="Enter your education" required>
+            </div>
+            <div class="form-group">
+                <label for="experience">Experience:</label>
+                <textarea id="experience" rows="4" placeholder="Enter your experience" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="skills">Skills:</label>
+                <input type="text" id="skills" placeholder="Enter your skills" required>
+            </div>
+            <button type="button" id="generateResumeButton">Generate Resume</button>
+        </form>
+        <div id="resumeOutput" class="hidden">
+            <h2>Resume</h2>
+            <div id="resumeContent"></div>
+            <button id="printButton">Print Resume</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
